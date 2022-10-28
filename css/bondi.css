@@ -52,3 +52,9 @@ body{
     position: relative;
     color: var(--red-color);
 }
+.main-title{
+    color: var(--green-color);
+}
+.main-title img{
+    width: 70px;
+}
