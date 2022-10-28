@@ -54,6 +54,7 @@ body {
 
 .navbar .search {
     border-left: 1px solid var(--green-color);
+    border-right: 1px solid var(--green-color)
 }
 
 .navbar .search svg {
