@@ -2,14 +2,38 @@
     --dark-color: #19283f;
     --green-color: #33d1cc;
     --red-color: #ff0000;
-    --section-color: #eff7fa;
+    --section-color: #e1e3e3;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: 5000px;
 }
 
+.main-btn:hover {
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    top: 2px;
+    position: relative;
+    color: var(--red-color);
+}
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-title img {
+    width: 70px;
+}
+
+/* Start Naverbar */
 .navbar {
     background-color: var(--dark-color);
 }
@@ -32,11 +56,6 @@ body {
     border-left: 1px solid var(--green-color);
 }
 
-.navbar .search:hover {
-    display: block;
-    color: #ff0000;
-}
-
 .navbar .search svg {
     color: var(--green-color);
 }
@@ -55,35 +74,14 @@ body {
     border-color: var(--green-color);
 }
 
+/* End Naverbar */
+/* Start Landing */
 .landing {
     background-color: var(--dark-color);
     min-height: calc(100vh - 72px);
 }
 
-.main-btn:hover {
-    right: 2px;
-    bottom: 2px;
-    left: 2px;
-    top: 2px;
-    position: relative;
-    color: var(--red-color);
-}
-
-
-.main-title img {
-    width: 70px;
-}
-
-.main-title::after {
-    content: '';
-    width: 120px;
-    height: 2px;
-    background-color: var(--green-color);
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
+/* End Landing */
 
 /* Start features */
 .features .icon-holder {
@@ -105,7 +103,8 @@ body {
 }
 
 .features .feat h4 {
-    color: yellow;
+    color: #ff5858;
 }
 
 /* End features */
+/* Start Our Work */
