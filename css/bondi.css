@@ -1,61 +1,79 @@
-:root{
-    --dark-color:#19283f;
-    --green-color:#33d1cc;
-    --red-color:#ff0000;
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff0000;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     height: 5000px;
 }
-.navbar{
+
+.navbar {
     background-color: var(--dark-color);
 }
-.navbar-nav .nav-link{
+
+.navbar-nav .nav-link {
     color: white;
 }
-.navbar-nav .nav-link:active,.navbar-nav .nav-link:focus,.navbar-nav .nav-link:hover{
+
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
     color: var(--green-color);
 }
-.navbar-nav .nav-link::selection{
+
+.navbar-nav .nav-link::selection {
     display: none;
 }
-.navbar .search{
+
+.navbar .search {
     border-left: 1px solid var(--green-color);
 }
-.navbar .search:hover{
+
+.navbar .search:hover {
     display: block;
     color: #ff0000;
 }
-.navbar .search svg{
+
+.navbar .search svg {
     color: var(--green-color);
 }
-.navbar .navbar-toggler{
+
+.navbar .navbar-toggler {
     color: white;
     font-size: 25px;
-    border-color:white;
+    border-color: white;
 }
-.navbar .navbar-toggler:focus{
+
+.navbar .navbar-toggler:focus {
     box-shadow: none;
 }
-.navbar .navbar-toggler[aria-expanded="true"]{
+
+.navbar .navbar-toggler[aria-expanded="true"] {
     border-color: var(--green-color);
 }
-.landing{
+
+.landing {
     background-color: var(--dark-color);
     min-height: calc(100vh - 72px);
 }
-.main-btn:hover{
-    right:2px;
+
+.main-btn:hover {
+    right: 2px;
     bottom: 2px;
     left: 2px;
     top: 2px;
     position: relative;
     color: var(--red-color);
 }
-.main-title{
+
+.main-title {
     color: var(--green-color);
 
+
 }
-.main-title img{
+
+.main-title img {
     width: 70px;
 }
