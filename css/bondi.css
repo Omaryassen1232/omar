@@ -68,12 +68,30 @@ body {
     color: var(--red-color);
 }
 
-.main-title {
-    color: var(--green-color);
-
-
-}
 
 .main-title img {
     width: 70px;
 }
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Start features */
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* End features */
