@@ -2,7 +2,7 @@
     --dark-color: #19283f;
     --green-color: #33d1cc;
     --red-color: #ff0000;
-    --section-color: #e1e3e3;
+    --section-color: #e8e8e8;
 }
 
 body {
@@ -33,9 +33,21 @@ body {
     width: 70px;
 }
 
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
 /* Start Naverbar */
 .navbar {
     background-color: var(--dark-color);
+}
+
+.navbar-brand:hover {
+    position: relative;
+    transform: rotate(5deg);
+    transition: 50ms ease-out;
 }
 
 .navbar-nav .nav-link {
@@ -101,6 +113,10 @@ body {
 
 .features .icon-holder .icon {
     color: var(--green-color);
+}
+
+.features .info-holder {
+    color: #ea0d0db3;
 }
 
 .features .feat h4 {
