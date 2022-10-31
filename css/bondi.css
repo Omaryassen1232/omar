@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.main-btn:hover {
+.main-btn.btn-primary:hover {
     right: 2px;
     bottom: 2px;
     left: 2px;
@@ -26,6 +26,7 @@ body {
     position: absolute;
     bottom: -20px;
     left: 50%;
+    font-weight: 700;
     transform: translateX(-50%);
 }
 
@@ -72,18 +73,6 @@ body {
     border-right: 1px solid var(--green-color)
 }
 
-.navbar .searchicon {
-    left: 50%;
-    top: -45%;
-    z-index: 1;
-    border: #19283f solid 3px;
-    background-color: #19283f;
-    border-radius: 10px;
-    color: white;
-    transform: translateX(-50%);
-    position: absolute;
-}
-
 .navbar .searchicon:hover {
     color: var(--green-color);
 }
@@ -104,6 +93,10 @@ body {
 
 .navbar .navbar-toggler[aria-expanded="true"] {
     border-color: var(--green-color);
+}
+
+.offcanvas-header {
+    color: #ff0000;
 }
 
 /* End Naverbar */

@@ -20,11 +20,17 @@
         <div class="container">
             <a class="navbar-brand" href="#"><img src="logo-no-background.png" alt="" width="230" height="44"
                     class="d-inline-block align-text-top"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <a class="nav-link p-2 p-lg-3" aria-current="page" href="#Home"><i
@@ -43,23 +49,8 @@
                                 class="fa-regular fa-id-badge me-2"></i>Contact</a>
                     </li>
                 </ul>
-                <label for="search">
-                    <div class="search ps-3 pe-3 d-lg-block text-light position-relative fa-2x"><i
-                            class="fa-solid fa-magnifying-glass searchicon"></i>
-                </label>
-                <input id="search" class="form-control me-3 d-none d-sm-block" type="search" placeholder="Search"
-                    aria-label="Search">
             </div>
-
-            <div class="searchphone ps-1 pe-1 d-lg-block text-light w-20 h-25 d-inline-block">
-
-
-                <input class="form-control me-3 d-block d-sm-none " type="search" placeholder="Search"
-                    aria-label="Search">
-            </div>
-
-        </div>
-        <a class="btn main-btn btn-primary rounded-pill ms-3 d-none d-sm-block" href="#">Login</a>
+            <a class="btn main-btn btn-primary rounded-pill ms-3 d-none d-sm-block" href="#">Login</a>
     </nav>
 
     <div class="landing d-flex justify-content-center align-items-center" data-bs-target="#navbar-example2" id="Home">
