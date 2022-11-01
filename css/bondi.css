@@ -5,17 +5,30 @@
     --section-color: #e8e8e8;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+::-webkit-scrollbar {
+    width: 12px;
 }
 
-.main-btn.btn-primary:hover {
-    right: 2px;
-    bottom: 2px;
-    left: 2px;
-    top: 2px;
-    position: relative;
-    color: #ff0000;
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#19283fb1, #e8e8e8ad);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#19283f, #e8e8e8);
+    border-radius: 6px;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-title::after {
@@ -53,6 +66,22 @@ body {
     transition: 50ms ease-out;
 }
 
+.btn.main-btn.btn-primary {
+    color: var(--section-color);
+
+}
+
+.btn.main-btn.btn-primary:hover {
+    color: var(--red-color);
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    top: 2px;
+    font-weight: 500;
+    position: relative;
+    color: var(--red-color);
+}
+
 .navbar-nav .nav-link {
     color: white;
 }
@@ -68,18 +97,11 @@ body {
     display: none;
 }
 
-.navbar .search {
-    border-left: 1px solid var(--green-color);
-    border-right: 1px solid var(--green-color)
-}
 
 .navbar .searchicon:hover {
     color: var(--green-color);
 }
 
-.navbar .search svg {
-    color: var(--green-color);
-}
 
 .navbar .navbar-toggler {
     color: white;

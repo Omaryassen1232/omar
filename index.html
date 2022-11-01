@@ -15,22 +15,16 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
     <nav id="navbar-example2" class="navbar navbar-expand-lg  sticky-top ">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="logo-no-background.png" alt="" width="230" height="44"
                     class="d-inline-block align-text-top"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <a class="nav-link p-2 p-lg-3" aria-current="page" href="#Home"><i
@@ -48,9 +42,12 @@
                         <a class="nav-link p-lg-3 " aria-current="page" href="#"><i
                                 class="fa-regular fa-id-badge me-2"></i>Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="btn main-btn btn-primary rounded-pill ms-3" aria-current="page" href="#">Login</a>
+                    </li>
                 </ul>
             </div>
-            <a class="btn main-btn btn-primary rounded-pill ms-3 d-none d-sm-block" href="#">Login</a>
+
     </nav>
 
     <div class="landing d-flex justify-content-center align-items-center" data-bs-target="#navbar-example2" id="Home">
