@@ -19,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(#19283f, #e8e8e8);
+    background: linear-gradient(#19283f, #0066ffe9);
 }
 
 * {
@@ -152,6 +152,13 @@ body {
 
 .features .feat h4 {
     color: #ff5858;
+}
+
+marquee {
+    background-color: red;
+    font-weight: 600;
+    height: ;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* End features */
