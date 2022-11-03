@@ -19,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(#19283f, #0066ffe9);
+    background: linear-gradient(#0066ff89, #0066ff);
 }
 
 * {
@@ -52,6 +52,11 @@ body {
     color: var(--green-color);
     bottom: 3px;
     position: relative;
+    border: #0066ff solid 3px;
+    border-radius: 30px;
+    border-left: transparent;
+    border-right: transparent;
+    transition: 50ms;
 }
 
 /* Start Naverbar */
@@ -60,7 +65,6 @@ body {
 }
 
 .navbar-brand:hover {
-    position: relative;
     transform: rotate(5deg);
     transition: 50ms ease-out;
 }
@@ -155,33 +159,20 @@ body {
     color: #ff5858;
 }
 
-marquee.d-lg-inline-block {
-    border: white solid 2px;
-    font-weight: 800;
-    height: 50px;
-    bottom: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 30px;
-    overflow: hidden;
-}
-
-.d-sm-none {
-    border: white solid 2px;
-    font-weight: 800;
-    height: 50px;
-    bottom: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 30px;
-    overflow: hidden;
-}
-
+marquee.d-lg-inline-block,
+.d-sm-none,
 .d-md-inline-block {
-    border: white solid 2px;
-    font-weight: 800;
-    height: 50px;
+    font-weight: 900;
+    height: 60px;
     bottom: 100px;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 30px;
+    border-radius: 40px;
+    border-right: var(--green-color) double 5px;
+    border-bottom-right-radius: 20px;
+    border-left: var(--green-color) double 5px;
+    border-top-left-radius: 20px;
+    border-bottom: var(--green-color) solid 2px;
+    border-top: var(--green-color) solid 2px;
     overflow: hidden;
 }
 
