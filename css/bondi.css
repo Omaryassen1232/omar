@@ -112,6 +112,7 @@ body {
 
 .navbar .navbar-toggler[aria-expanded="true"] {
     border-color: var(--green-color);
+
 }
 
 .offcanvas-header {
@@ -155,6 +156,26 @@ body {
 }
 
 marquee.d-lg-inline-block {
+    border: white solid 2px;
+    font-weight: 800;
+    height: 50px;
+    bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.d-sm-none {
+    border: white solid 2px;
+    font-weight: 800;
+    height: 50px;
+    bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.d-md-inline-block {
     border: white solid 2px;
     font-weight: 800;
     height: 50px;
