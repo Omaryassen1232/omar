@@ -69,9 +69,7 @@ body {
     border-right: var(--green-color) double 5px;
     border-bottom-right-radius: 20px;
     border-left: var(--green-color) double 5px;
-    border-top-left-radius: 20px;
-    border-bottom: var(--green-color) dotted 4px;
-    border-top: var(--green-color) dotted 4px;
+    border-top-left-radius: 15px;
 }
 
 .navbar.btn.main-btn.btn-primary {
@@ -132,11 +130,7 @@ body {
 /* Start Landing */
 .landing {
     background-color: var(--dark-color);
-}
-
-.wave {
-    position: absolute;
-    bottom: 0;
+    min-height: calc(100vh - 72px);
 }
 
 /* End Landing */
