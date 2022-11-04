@@ -65,8 +65,13 @@ body {
 }
 
 .navbar-brand:hover {
-    transform: rotate(5deg);
     transition: 50ms ease-out;
+    border-right: var(--green-color) double 5px;
+    border-bottom-right-radius: 20px;
+    border-left: var(--green-color) double 5px;
+    border-top-left-radius: 20px;
+    border-bottom: var(--green-color) dotted 4px;
+    border-top: var(--green-color) dotted 4px;
 }
 
 .navbar.btn.main-btn.btn-primary {
@@ -127,7 +132,11 @@ body {
 /* Start Landing */
 .landing {
     background-color: var(--dark-color);
-    min-height: calc(100vh - 72px);
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
 }
 
 /* End Landing */
